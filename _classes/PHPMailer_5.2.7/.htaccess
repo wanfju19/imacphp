@@ -1,0 +1,30 @@
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^groogr\.me$ [OR]
+RewriteCond %{HTTP_HOST} ^dev.groogr\.me$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.groogr\.me$
+RewriteCond %{REQUEST_URI} !^/groogr/
+RewriteRule (.*) /groogr/$1
+
+RewriteCond %{HTTP_HOST} ^groogr\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^dev.groogr\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.groogr\.com$
+RewriteCond %{REQUEST_URI} !^/groogr/
+RewriteRule (.*) /groogr/$1
+
+RewriteCond %{HTTP_HOST} ^groogr\.biz$ [OR]
+RewriteCond %{HTTP_HOST} ^dev.groogr\.biz$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.groogr\.biz$
+RewriteCond %{REQUEST_URI} !^/groogr/
+RewriteRule (.*) /groogr/$1
+
+RewriteCond %{HTTP_HOST} ^groogr\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^dev.groogr\.net$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.groogr\.net$
+RewriteCond %{REQUEST_URI} !^/groogr/
+RewriteRule (.*) /groogr/$1
+
+RewriteCond %{HTTP_HOST} ^gr-soft\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^dev.gr-soft\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.gr-soft\.com$
+RewriteCond %{REQUEST_URI} !^/groogr/
+RewriteRule (.*) /groogr/$1
